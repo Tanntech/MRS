@@ -1,2 +1,2 @@
 # MRS
- Movie recommendation website
+ A website that recommends user best trending shows and movies
