@@ -20,10 +20,19 @@
     align-items: center;
     padding: 1rem;
   }
+
+
   
   .logo {
     font-size: 2rem;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .logo p{
+    height: 72.44px;
   }
   
   .nav-items {
@@ -35,8 +44,12 @@
     text-decoration: none;
     margin: 0 1rem;
   }
+
   
-  .search-box {
+
+
+  
+  /*.search-box {
     display: flex;
     align-items: center;
   }
@@ -55,7 +68,8 @@
     background-color: #fff;
     color: #333;
     cursor: pointer;
-  }
+  }     
+  */
   
   /* Hero section styles */
   /*.hero {
@@ -69,6 +83,42 @@
     color: #fff;
   }*/
 
+
+  .search-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: transparent;
+    border-color: #000;
+
+  }
+  
+  #search-input {
+    padding: 10px;
+    border: none;
+    /*border-radius: 20px;*/
+    font-size: 16px;
+    width: 300px;
+    background-color: transparent;
+  }
+  
+  #search-button {
+    background-color: #ddd;
+    color: #333;
+    border: black;
+    border-color: #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: -40px;
+    cursor: pointer;
+    background-color: transparent;
+
+  }
+  
+  /* Import Font Awesome CSS */
+  
   .hero {
 	position: relative;
 	height: 700px;
@@ -78,6 +128,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+  z-index: 1;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -105,6 +156,9 @@
 	color: #fff;
 	text-shadow: 2px 2px 5px #000;
 }
+
+
+
   
   .btn {
     display: inline-block;
@@ -145,6 +199,8 @@
     border-radius: 0.5rem;
     margin: 0 20px;
     box-shadow: 0 0 50px rgba(0,0,0,0.2);
+    height: 561.2px;
+
 
     /*margin-bottom: 2rem;*/
     overflow: hidden;
@@ -155,8 +211,9 @@
   }
   
   .movie-card img {
-   width: 100%;
-    height: auto;
+  max-width: 300px;
+  height: 450px;
+    
   }
   
   .movie-card h3 {
@@ -187,8 +244,8 @@
   }
   
   .tv-show-card img {
-    width: 100%;
-    height: auto;
+   
+  object-fit: cover;
   }
   
   .tv-show-card h3 {

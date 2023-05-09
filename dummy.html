@@ -7,10 +7,12 @@
     <title>Movie Recommendation Website</title>
     <link rel="stylesheet" href="dummy.css" />
     <link rel="icon" type="image/x-icon" href="LogoMakr-1NivQW.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
   </head>
   <body>
     <nav>
-      <div class="logo">FYS</div>
+      <div class="logo"><img  src="LogoMakr-1NivQW.png" height="44.8px"/><p >FYS</p>  </div>
       <div class="nav-items">
         <a href="#">Home</a>
         <a href="#">Movies</a>
@@ -18,17 +20,25 @@
         <a href="#">TV Shows</a>
         <a href="#">About Us</a>
       </div>
-      <div class="search-box">
+   <!--   <div class="search-box">
         <input type="text" placeholder="Search movies or TV shows" />
         <button>Search</button>
-      </div>
+      </div>-->
     </nav>
     <section class="hero">
      
         <section class="hero">
-			<video autoplay muted loop poster="video-poster.jpg">
+			<video autoplay muted  poster="video-poster.jpg"><!--removed loop keyword-->
 				<source src="video.mp4" type="video/mp4">
 			</video>
+
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      
+      
+
 			<div class="hero-text">
 				<h1>Find Your Next Favorite Movie</h1>
 				<p>Get personalized movie recommendations based on your interests.</p>
@@ -36,20 +46,20 @@
 		</section>
     </section>
     <section class="featured-movies">
-      <h2 class="heading">Featured Today</h2>
+      <h2 class="heading">Featured Movies</h2>
       <div class="card">
       <div class="movie-card">
-        <img src="https://via.placeholder.com/300x450" alt="Movie Poster" />
+        <img src="spider.jpg" alt="Movie Poster" />
         <h3>Movie Title</h3>
         <p>Release Date: MM/DD/YYYY</p>
       </div>
       <div class="movie-card">
-        <img src="https://via.placeholder.com/300x450" alt="Movie Poster" />
+        <img src="doctor strange.jpg" alt="Movie Poster" />
         <h3>Movie Title</h3>
         <p>Release Date: MM/DD/YYYY</p>
       </div>
       <div class="movie-card">
-        <img src="https://via.placeholder.com/300x450" alt="Movie Poster" />
+        <img src="avengers.jpg" alt="Movie Poster" />
         <h3>Movie Title</h3>
         <p>Release Date: MM/DD/YYYY</p>
       </div>
@@ -58,20 +68,20 @@
     </section>
     
     <section class="popular-tv-shows">
-      <h2 class="heading">Popular TV Shows</h2>
+      <h2 class="heading">Popular Series</h2>
       <div class="card">
-      <div class="tv-show-card">
-        <img src="https://via.placeholder.com/300x450" alt="TV Show Poster" />
+      <div class="movie-card">
+        <img src="se1.jpg" alt="TV Show Poster" />
         <h3>TV Show Title</h3>
         <p>First Air Date: MM/DD/YYYY</p>
       </div>
-      <div class="tv-show-card">
-        <img src="https://via.placeholder.com/300x450" alt="TV Show Poster" />
+      <div class="movie-card">
+        <img src="wed2.jpg" alt="TV Show Poster" />
         <h3>TV Show Title</h3>
         <p>First Air Date: MM/DD/YYYY</p>
       </div>
-      <div class="tv-show-card">
-        <img src="https://via.placeholder.com/300x450" alt="TV Show Poster" />
+      <div class="movie-card">
+        <img src="money heist.jpg" alt="TV Show Poster" />
         <h3>TV Show Title</h3>
         <p>First Air Date: MM/DD/YYYY</p>
       </div>
@@ -85,5 +95,7 @@
       </div>
       <p>&copy; 2021 Movie Recommendation. All Rights Reserved.</p>
     </footer>
+
+    <script src="search.js"></script>
   </body>
 </html
