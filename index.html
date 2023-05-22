@@ -1,49 +1,1719 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Movie Recommendations</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Movies</a></li>
-				<li><a href="#">Anime</a></li>
-				<li><a href="#">TV Shows</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section class="hero">
-			<video autoplay muted loop poster="video-poster.jpg">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movie Recommendation Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="LogoMakr-1NivQW.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img  src="LogoMakr-1NivQW.png" height="44.8px"/><p >MovieSpace</p>  </div>
+      <div class="nav-items">
+        <a href="#">Home</a>
+        <a href="#">Genre</a>
+        <a href="#">Watch List</a>
+        <a href="#">About Us</a>
+        <a href="#">Sign In</a>
+      </div>
+  
+    </nav>
+    <section class="hero">
+     
+        
+			<video autoplay muted  poster="video-poster.jpg"><!--removed loop keyword-->
 				<source src="video.mp4" type="video/mp4">
 			</video>
+
+      <div class="search-container">
+           <div id="search">
+          <input type="text" placeholder="Search...">
+          
+      </div>
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      
+      
+
 			<div class="hero-text">
 				<h1>Find Your Next Favorite Movie</h1>
 				<p>Get personalized movie recommendations based on your interests.</p>
 			</div>
 		</section>
-		<div class="card-container">
-			<div class="card">
-				<img src="movie1.jpg" alt="Movie 1">
-				<h2>Movie Title 1</h2>
-				<p>Summary of Movie 1</p>
-			</div>
-			<div class="card">
-				<img src="movie2.jpg" alt="Movie 2">
-				<h2>Movie Title 2</h2>
-				<p>Summary of Movie 2</p>
-			</div>
-			<div class="card">
-				<img src="movie3.jpg" alt="Movie 3">
-				<h2>Movie Title 3</h2>
-				<p>Summary of Movie 3</p>
-			</div>
-			<!-- Add more cards here -->
-		</div>
-	</main>
-</body>
-</html>
+    </section>
+
+
+    <section class="movies">
+        
+<!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
+
+        <h2 class="heading">Featured Movies</h2>
+        <div class="card a">
+          <div class="mySwiper">
+            <div class="swiper-wrapper">
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+           
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+
+             
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+         
+  
+             
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div>
+            </div>
+  
+  
+            
+               </div></div>
+          
+              </div>
+
+              <section>
+                <div class="slider-btns">
+                    <div class="swiper-button-prev"></div>
+        
+                    <div class="swiper-button-next"></div>
+                </div>
+              </section>
+  
+<!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
+
+              
+        <h2 class="heading">Featured Movies</h2>
+        <div class="card a">
+          <div class="mySwiper">
+            <div class="swiper-wrapper">
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+           
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+         
+  
+             
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div>
+            </div>
+  
+  
+            
+               </div></div>
+          
+              </div>
+
+              
+<!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
+
+        <h2 class="heading">Featured Movies</h2>
+        <div class="card a">
+          <div class="mySwiper">
+            <div class="swiper-wrapper">
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+           
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+         
+  
+             
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div>
+            </div>
+  
+  
+            
+               </div></div>
+          
+              </div>
+<!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
+
+        <h2 class="heading">Featured Movies</h2>
+        <div class="card a">
+          <div class="mySwiper">
+            <div class="swiper-wrapper">
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+           
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+         
+  
+             
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div>
+            </div>
+  
+  
+            
+               </div></div>
+          
+              </div>
+
+<!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
+
+
+              
+        <h2 class="heading">Featured Movies</h2>
+        <div class="card a">
+          <div class="mySwiper">
+            <div class="swiper-wrapper">
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+           
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+         
+  
+             
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div>
+            </div>
+  
+  
+            
+               </div></div>
+          
+              </div>
+
+<!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
+   
+        <h2 class="heading">Featured Movies</h2>
+        <div class="card a">
+          <div class="mySwiper">
+            <div class="swiper-wrapper">
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+           
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+         
+  
+             
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div>
+            </div>
+  
+  
+            
+               </div></div>
+          
+              </div>
+
+<!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
+ 
+        <h2 class="heading">Featured Movies</h2>
+        <div class="card a">
+          <div class="mySwiper">
+            <div class="swiper-wrapper">
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+           
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+         
+  
+             
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div></div>
+  
+              <div class="movie-card swiper-slide">
+  
+                <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
+  
+                <div class="details">
+                  <h3>Movie Title</h3>
+                  <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4/5</span>
+                  </div>
+                  <div class="tags">
+                    <span>sci-fi</span>
+                    <span>action</span>
+                  </div>
+                  <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores quos illo adipisci consequatur ratione aliquam totam dolore ex quas.</p>
+                  </div>
+  
+             </div>
+            </div>
+  
+  
+            
+               </div></div>
+          
+              </div>
+
+       
+              <section>
+                <div class="slider-btns">
+                    <div class="swiper-button-prev"></div>
+        
+                    <div class="swiper-button-next"></div>
+                </div>
+              </section>
+              
+              
+
+
+             
+
+              
+    </section>
+
+
+
+
+    <script src="swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+slidesPerView: 1,
+spaceBetween: 10,
+pagination: {
+  el: ".swiper-pagination",
+  clickable: true,
+},
+navigation: {
+nextEl: ".swiper-button-next",
+prevEl: ".swiper-button-prev",
+},
+breakpoints: {
+  640: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
+  768: {
+    slidesPerView: 4,
+    spaceBetween: 40,
+  },
+  1024: {
+    slidesPerView: 3,
+    spaceBetween: 20,
+  },
+},
+});
+    </script>
+
+        <script src="script.js"></script>
+
+
+  
+</body></html>

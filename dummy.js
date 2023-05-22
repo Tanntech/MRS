@@ -16,3 +16,7 @@ searchInput.addEventListener('keydown', (event) => {
     }
   }
 });
+
+//navigation button
+
+
