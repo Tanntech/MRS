@@ -7,7 +7,7 @@ searchButton.addEventListener('click', () => {
     window.location.href = `/search?q=${query}`;
   }
 });
-
+ 
 searchInput.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     const query = searchInput.value.trim();
@@ -17,6 +17,14 @@ searchInput.addEventListener('keydown', (event) => {
   }
 });
 
-//navigation button
+//navigation button active link
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('nav a').forEach(link => {
+  if(link.href.includes(`${activePage}`)){
+    link.classList.add('active');
+  }
+})
+
+
 
 

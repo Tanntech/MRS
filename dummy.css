@@ -1,7 +1,7 @@
 /* Global styles */
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0; 
     padding: 0;
   }
   
@@ -39,12 +39,32 @@
     margin: 0 1rem;
   }
 
+  nav .nav-items a:is(:link, :active ,:visited){
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+
+nav .nav-items a:is(:link, :active ,:visited).active{
+    color:#40E0D0;
+    background-color: wheat;
+    /* text-decoration: underline  #40E0D0 0.15rem;
+    text-underline-offset: 0.5rem; */
+  }
+
+  /* .active[aria-current = "page"]{
+    text-decoration: underline  #40E0D0 0.15rem;
+    text-underline-offset: 0.5rem;
+  } */
+
+
   .search-container {
+    width: 700px;
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
     /*background-color: transparent;*/
     border-color: #000;
     top: 250px;
@@ -54,17 +74,18 @@
   }
   
   #search {
-    width: 700px;
+    width:620px ;
     padding: 5px 10px;
     display: flex;
     align-items: center;
-    border-radius: 30px;
     background-color: #ddd;
     opacity: 50%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 
   #search input{
-   width: 650px;
+   width: 638px;
    margin-left: 6px;
    height: 30px;
    border: none;
@@ -79,17 +100,29 @@
     color:black;
   }
 
-
+.glass{
+  background-color: #ddd;
+    opacity: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 40px;
+  width: 40px;
+}
   
   #search-button {
     background-color: #ddd;
     border: none;
     border-color: #000;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin-left: -50px;
-    background-color: transparent;
-    cursor: pointer;
+    padding: 10px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+  width: 40px;
 
   }
   
@@ -97,9 +130,8 @@
 
   #search-button i{
     visibility: visible;
-    color: #ddd;
-    margin: auto;   
-    cursor: pointer;
+    cursor: pointer; 
+    z-index: 2;
   }
   
 .hero {

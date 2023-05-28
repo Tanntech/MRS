@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="swiper-bundle.min.css" />
-
+    <script defer src="dummy.js"></script>
 
   </head>
   <body>
+
+    <section id="container">
     <nav>
       <div class="logo"><img  src="LogoMakr-1NivQW.png" height="44.8px"/><p >MovieSpace</p>  </div>
       <div class="nav-items">
-        <a href="#">Home</a>
-        <a href="#">Genre</a>
-        <a href="#">Watch List</a>
-        <a href="#">About Us</a>
-        <a href="#">Sign In</a>
+        <a   href="#">Home</a>
+        <a   href="#">Genre</a>
+        <a   href="/watchlist.html">Watch List</a>
+        <a   href="About Us.html">About Us</a>
+        <a   href="#">Sign In</a>
       </div>
   
     </nav>
@@ -33,12 +35,14 @@
 			</video>
 
       <div class="search-container">
-           <div id="search">
-          <input type="text" placeholder="Search...">
-          
-      </div>
-        <button id="search-button"><i class="fas fa-search"></i></button>
-      </div>
+        <div id="search">
+             <input type="text" id="search-input" placeholder="Search...">
+        </div>
+
+        <div class="glass">
+           <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+   </div>
       
       
 
@@ -688,50 +692,15 @@
 
       </div>
 
-      <footer>
-        <div class="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Contact Us</a>
-        </div>
 
-
-        <script src="swiper-bundle.min.js"></script>
-
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev",
-},
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-      },
-    },
-  });
-        </script>
+    </section>
 
       
+   
 
-      <p>&copy; 2021 Movie Recommendation. All Rights Reserved.</p>
-    </footer>                                     
+      
+                                   
 
-    <script src="search.js"></script>
+    <script src="dummy.js"></script>
   </body>
 </html

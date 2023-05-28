@@ -35,7 +35,7 @@
 
       <div class="search-container">
            <div id="search">
-          <input type="text" placeholder="Search...">
+          <input type="text" id="search-input" placeholder="Search...">
           
       </div>
         <button id="search-button"><i class="fas fa-search"></i></button>
@@ -57,9 +57,9 @@
 
         <h2 class="heading">Featured Movies</h2>
         <div class="card a">
-          <div class="mySwiper">
-            <div class="swiper-wrapper">
-              <div class="movie-card swiper-slide">
+          <!-- <div class="mySwiper" id="swiper1">
+            <div class="swiper-wrapper"> -->
+              <div class="movie-card ">
   
                 <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
   
@@ -83,7 +83,7 @@
              </div></div>
            
   
-              <div class="movie-card swiper-slide">
+              <div class="movie-card ">
   
                 <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
   
@@ -109,7 +109,7 @@
              
   
   
-              <div class="movie-card swiper-slide">
+              <div class="movie-card ">
   
                 <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
   
@@ -133,7 +133,7 @@
              </div></div>
   
   
-              <div class="movie-card swiper-slide">
+              <div class="movie-card ">
   
                 <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
   
@@ -157,7 +157,7 @@
              </div></div>
   
   
-              <div class="movie-card swiper-slide">
+              <div class="movie-card ">
   
                 <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
   
@@ -181,7 +181,7 @@
              </div></div>
   
   
-              <div class="movie-card swiper-slide">
+              <div class="movie-card ">
   
                 <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
   
@@ -206,7 +206,7 @@
          
   
              
-              <div class="movie-card swiper-slide">
+              <div class="movie-card ">
   
                 <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
   
@@ -230,7 +230,7 @@
              </div></div>
   
   
-              <div class="movie-card swiper-slide">
+              <div class="movie-card">
   
                 <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
   
@@ -253,7 +253,7 @@
   
              </div></div>
   
-              <div class="movie-card swiper-slide">
+              <div class="movie-card ">
   
                 <div class="poster"><img src="spider.jpg" alt="Movie Poster" /></div>
   
@@ -279,24 +279,24 @@
   
   
             
-               </div></div>
+               <!-- </div></div> -->
           
               </div>
 
               <section>
-                <div class="slider-btns">
-                    <div class="swiper-button-prev"></div>
+                <div class="slider-btns" id="id1">
+                    <div class="swiper-button-prev "></div>
         
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-next " ></div>
                 </div>
               </section>
   
-<!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
+<!-- card card  Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
 
               
         <h2 class="heading">Featured Movies</h2>
         <div class="card a">
-          <div class="mySwiper">
+          <div class="mySwiper" id="swiper2">
             <div class="swiper-wrapper">
               <div class="movie-card swiper-slide">
   
@@ -525,7 +525,7 @@
 
         <h2 class="heading">Featured Movies</h2>
         <div class="card a">
-          <div class="mySwiper">
+          <div class="mySwiper" id="swiper3">
             <div class="swiper-wrapper">
               <div class="movie-card swiper-slide">
   
@@ -752,7 +752,7 @@
 
         <h2 class="heading">Featured Movies</h2>
         <div class="card a">
-          <div class="mySwiper">
+          <div class="mySwiper" id="swiper4">
             <div class="swiper-wrapper">
               <div class="movie-card swiper-slide">
   
@@ -982,7 +982,7 @@
               
         <h2 class="heading">Featured Movies</h2>
         <div class="card a">
-          <div class="mySwiper">
+          <div class="mySwiper" id="swiper5">
             <div class="swiper-wrapper">
               <div class="movie-card swiper-slide">
   
@@ -1206,11 +1206,11 @@
           
               </div>
 
-<!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
+<!-- card card  Card   card card card card  Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
    
         <h2 class="heading">Featured Movies</h2>
         <div class="card a">
-          <div class="mySwiper">
+          <div class="mySwiper" id="swiper6">
             <div class="swiper-wrapper">
               <div class="movie-card swiper-slide">
   
@@ -1437,8 +1437,8 @@
 <!--   Card       Card    Card    Card     Card  Card  Card  Card  Card  Card  Card  Card  Card  Card  Card     Card           -->
  
         <h2 class="heading">Featured Movies</h2>
-        <div class="card a">
-          <div class="mySwiper">
+        <div class="card " >
+          <div class="mySwiper" id="swiper7">
             <div class="swiper-wrapper">
               <div class="movie-card swiper-slide">
   
@@ -1748,35 +1748,7 @@
 
     <script src="swiper-bundle.min.js"></script>
 
-    <!-- card slider js script -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-slidesPerView: 1,
-spaceBetween: 10,
-pagination: {
-  el: ".swiper-pagination",
-  clickable: true,
-},
-navigation: {
-nextEl: ".swiper-button-next",
-prevEl: ".swiper-button-prev",
-},
-breakpoints: {
-  640: {
-    slidesPerView: 2,
-    spaceBetween: 20,
-  },
-  768: {
-    slidesPerView: 4,
-    spaceBetween: 40,
-  },
-  1024: {
-    slidesPerView: 3,
-    spaceBetween: 20,
-  },
-},
-});
-    </script>
+   
 
         <script src="script.js"></script>
 
