@@ -1,15 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Watch List | Movie Recommendation Website</title>
-  <link rel="stylesheet" href="watchlist.css">
-</head>
-<body>
-  <header>
-    <h1>Movie Recommendation Website</h1>
-  </header>
+  <head>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movie Recommendation Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="Images/LogoMakr-1NivQW.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <script defer src="script.js"></script>
+
+
+
+    <style>
+      body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .parallax {
+    background-image: url(Images/movie\ poster.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    position: relative;
+  }
+  
+  .parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .watchlist {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .movie-item {
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .movie-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .movie-info {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .movie-info h4 {
+    margin: 0;
+  }
+  
+  .movie-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .movie-item:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+
+
+  
+  /* Add slide-in animation */
+.slide-in {
+    animation: slideIn 0.5s ease-in-out forwards;
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+    </style>
+
+  </head>
+
+
+  <body>
+    <section id="container">
+      <nav>
+        <div class="logo"><img  src="Images\LogoMakr-1NivQW.png" height="44.8px"/><p >MovieSpace</p>  </div>
+        <div class="nav-items">
+          <a href="index.html"  >Home</a>
+          
+          <div class="dropdown">
+          <a href="#">Genre</a>
+            <div class="dropdown-content">    
+              <a href="#head1">Latest Movies</a>
+              <a href="#head2">Action films</a>
+              <a href="#head3">Adventure films</a>
+              <a href="#head4">Sci-fi films</a>
+              <a href="#head5">Comedies</a>
+              <a href="#head6">Drama</a>
+  
+            </div>
+            
+          </a></div>
+          
+          <a href="watchlist.html" class="active">Watch List</a>
+          <a href="About Us.html"  >About Us</a>
+          <a href="signin.html">Sign In</a>
+        </div>
+      </nav>
 
   <main>
     <section class="parallax">
@@ -24,14 +162,14 @@
         <h3>Watch List</h3>
         <div class="movie-container">
           <div class="movie-item">
-            <img src="movie1.jpg" alt="Movie 1">
+            <img src="spider.jpg" alt="Movie 1">
             <div class="movie-info">
               <h4>Movie 1</h4>
               <p>Genre: Action</p>
             </div>
           </div>
           <div class="movie-item">
-            <img src="movie2.jpg" alt="Movie 2">
+            <img src="spider.jpg" alt="Movie 2">
             <div class="movie-info">
               <h4>Movie 2</h4>
               <p>Genre: Drama</p>
@@ -43,6 +181,109 @@
     </section>
   </main>
 
-  <script src="watchlist.js"></script>
+
+
+  <footer>
+    <div class="footer">
+      <div class="footer-part1">   
+        <div class="footer-logo">
+          <div>
+            <img src="Images/LogoMakr-1NivQW.png" width="70px" height="40px" />
+          </div>
+        </div>
+        <div class="footer-copyright">
+         <br> <p>© 2023 MovieSpace.com <br /><br />All rights reserved.</p>
+        </div>
+      </div>
+
+      <div class="footer-part2">
+        <div class="footer-navigation">
+          <a href="#container">Home</a>
+          <a href="#">Genre</a>
+          <a href="#">Recommendations</a>
+          <a href="#">About Us</a>
+          <a href="#">Sign In</a>
+        </div>
+
+        <div class="footer-newsletter">
+          <br><br>
+          <h4>Subscribe to our Newsletter</h4>
+          <div class="subscribe">
+            <input type="email" placeholder="Enter your email" />
+            <button><b>Subscribe</b></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-part3">
+        <div>Contact us at</div>
+        <br />
+
+        <div class="footer-social">
+          <div>
+            <a href="#"><i class="fab fa-instagram icon"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="fab fa-facebook-f icon"></i></a>
+          </div>
+          <div>
+            <a href="#"><i class="fab fa-twitter icon"></i></a>
+          </div>
+
+          <div class="footer-back-to-top">
+              <div><a href="#"><i class="fab fa-youtube icon"></i></a></div>
+              <div class="back"> <a href="#container">
+            <i
+              class="fa fa-arrow-circle-up"
+              style="color:#fff width :32px height:32px"
+            ></i
+          ></a></div>
+           
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+    </section>
+
+  <script>
+    // Parallax effect on scroll
+window.addEventListener("scroll", function () {
+    var parallax = document.querySelector(".parallax");
+    var scrollPosition = window.pageYOffset;
+  
+    parallax.style.backgroundPositionY = scrollPosition * 0.7 + "px";
+  });
+  
+  // 3D animation on hover
+  var movieItems = document.querySelectorAll(".movie-item");
+  
+  movieItems.forEach(function (item) {
+    item.addEventListener("mousemove", function (e) {
+      var movieImage = item.querySelector("img");
+      var movieInfo = item.querySelector(".movie-info");
+  
+      var xAxis = (window.innerWidth / 2 - e.pageX) / 10;
+      var yAxis = (window.innerHeight / 2 - e.pageY) / 10;
+  
+      // movieImage.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+      movieInfo.style.transform = "translateZ(50px)";
+    });
+  
+    item.addEventListener("mouseleave", function () {
+      var movieImage = item.querySelector("img");
+      var movieInfo = item.querySelector(".movie-info");
+  
+      // movieImage.style.transform = "rotateY(0) rotateX(0)";
+      movieInfo.style.transform = "translateZ(0)";
+    });
+  });
+
+  
+  
+  
+  </script>
 </body>
 </html>

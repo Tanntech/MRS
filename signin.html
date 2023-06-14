@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/LogoMakr-1NivQW.png">
+
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-image: url(Images/movie\ poster.jpg);
+        }
+
+        .signup-card {
+            position: absolute;
+            top: 200px;
+            left: 620px;
+            width: 360px;
+            height: 500px;
+            border-radius: 10px;
+            background: #1C1C1C;
+            opacity: 85%;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 20px 40px;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .signup-card a {
+        text-decoration: none;
+        color: #40e0d0;
+        }
+
+        .signup-card a:hover {
+        text-decoration:underline;
+        color: #40e0d0;
+        }
+
+        .signup-form input {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+
+        .signup-form button {
+            width: 100px;
+            padding: 10px;
+            font-weight: bold;
+            background: #40e0d0;
+            color: #1C1C1C;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+
+        .signup-form button:hover {
+            background: #008d7f;
+        }
+    </style>
+</head>
+<body>
+
+  <!--Here is  a section of container or id as container containing the body /main content of MRS-->
+  <section id="container">
+
+    <!--Navbar section starts here-->
+      <nav>
+        <div class="logo"><img  src="Images\LogoMakr-1NivQW.png" height="44.8px"/><p >MovieSpace</p>  </div>
+        <div class="nav-items">
+          <a href="index.html"  >Home</a>
+          
+          <div class="dropdown">
+          <a href="#">Genre</a>
+            <div class="dropdown-content">    
+              <a href="#head1">Latest Movies</a>
+              <a href="#head2">Action films</a>
+              <a href="#head3">Adventure films</a>
+              <a href="#head4">Sci-fi films</a>
+              <a href="#head5">Comedies</a>
+              <a href="#head6">Drama</a>
+  
+            </div>
+            
+          </a></div>
+          
+          <a href="watchlist.html">Watch List</a>
+          <a href="About Us.html"  >About Us</a>
+          <a href="signin.html" class="active">Sign In</a>
+        </div>
+      </nav>
+
+    <div class="signup-card">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+        <!--SIGN-UP FORM    first slide-->
+                <div class="swiper-slide">
+
+  
+                    <h2><img src="Images/account-icon.png" alt="Sign In" width="200px" height="200px"></h2>
+                    <form class="signup-form" id="signin-form">
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="submit">Sign In</button>
+                    </form>
+                    <p style="color: #FFFFFF;">Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+
+
+    <!--SIGN-IN FORM second slide-->
+                <div class="swiper-slide ">
+
+
+                    <h2><img src="Images/Register icon.png" alt="Register"  height="170px"></h2>
+                    <form class="signup-form" id="signup-form">
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <p style="color: #FFFFFF;">Already have an account? <a href="#" class="signin-link">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+
+
+        // SWiper library used for sliding the slides of sign in and up form
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper(".swiper-container", {
+                speed: 500,
+                pagination: false,
+            });
+
+            const registerLink = document.querySelector('.register-link');
+            const signinLink = document.querySelector('.signin-link');
+
+            registerLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.slideTo(1);
+                
+            });
+
+            signinLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                swiper.slideTo(0);
+            });  })
+
+
+    // Validations
+
+            const signupForm = document.getElementById('signup-form');
+            const signinForm = document.getElementById('signin-form');
+
+     // validation of SIGNUP form
+
+            signupForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const username = signupForm.username.value;
+                const email = signupForm.email.value;
+                const password = signupForm.password.value;
+
+
+                function validateEmail(email) {
+                const emailPattern = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
+                return emailPattern.test(email);
+                }
+
+                function validatePassword(password) {
+                const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+                return passwordPattern.test(password);
+                }
+
+
+                if (validateEmail(email) && validatePassword(password)) {
+                    // Validations passed, redirect to a new link
+                    alert('Signup successful!');
+                    window.location.href = 'index.html'; // Replace with your desired link
+                } 
+                
+                else {
+                    // Form is invalid, show error message
+                    alert('Invalid email or password.');
+                }
+            });
+
+
+// validation of SIGN IN form
+
+            signinForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const username = signinForm.username.value;
+                const password = signinForm.password.value;
+
+                // Perform sign in action here
+            //     alert('Signin successful!');
+            //     window.location.href = 'https://example.com'; // Replace with your desired link
+            // });
+                 
+           
+            function validatePassword(password) {
+                const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+                return passwordPattern.test(password);
+            } 
+
+                if (validatePassword(password)) {
+                    // Validations passed, redirect to a new link
+                    alert('Signup successful!');
+                    window.location.href = 'index.html'; // Replace with your desired link
+                } 
+
+                else {
+                    // Form is invalid, show error message
+                    alert('Invalid email or password.');
+                }
+
+            
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>   

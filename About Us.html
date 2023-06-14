@@ -5,53 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Movie Recommendation Website</title>
-    <link rel="stylesheet" href="dummy.css" />
-    <link rel="icon" type="image/x-icon" href="LogoMakr-1NivQW.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="Images/LogoMakr-1NivQW.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="swiper-bundle.min.css" />
-    <script defer src="dummy.js"></script>
+    <script defer src="script.js"></script>
+
+    <style>
+      main p{
+        padding: 2%;
+        text-align: justify;
+      }
+
+      h2{
+        font-weight: 700;
+        padding: 2%;
+      }
+
+      main section .contact{
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
 
   </head>
   <body>
     <section id="container">
-    <nav>
-        <div class="logo"><img  src="LogoMakr-1NivQW.png" height="44.8px"/><p >MovieSpace</p>  </div>
+      <nav>
+        <div class="logo"><img  src="Images\LogoMakr-1NivQW.png" height="44.8px"/><p >MovieSpace</p>  </div>
         <div class="nav-items">
-          <a href="/dummy.html">Home</a>
+          <a href="index.html"  >Home</a>
+          
+          <div class="dropdown">
           <a href="#">Genre</a>
+            <div class="dropdown-content">    
+              <a href="#head1">Latest Movies</a>
+              <a href="#head2">Action films</a>
+              <a href="#head3">Adventure films</a>
+              <a href="#head4">Sci-fi films</a>
+              <a href="#head5">Comedies</a>
+              <a href="#head6">Drama</a>
+  
+            </div>
+            
+          </a></div>
+          
           <a href="watchlist.html">Watch List</a>
-          <a href="/About Us.html">About Us</a>
-          <a href="#">Sign In</a>
+          <a href="About Us.html" class="active" >About Us</a>
+          <a href="signin.html">Sign In</a>
         </div>
-    
       </nav>
-
+      <br>
       <header>
-        <h1>About Us</h1>
-      </header>
-    
+        <p style="font-weight: bolder; font-size: xx-large;">About Us</p>
+      </header><br><br>
+
+      <video autoplay muted  poster="Watch.jpg"  style="align-self: center ; width: 100%;"><!--removed loop keyword-->
+				<source src="Images/just create a dynamic illustration of a person watching my website through a remote with no text written.mp4" type="video/mp4">
+			</video>
+      <br><br>
+
       <main>
         <section>
           <h2>Welcome to Movie Recommendation Website</h2>
-          <p>We are a passionate team of movie enthusiasts dedicated to providing you with the best movie recommendations.</p>
-        </section>
+          <p>We are thrilled to present you with a platform designed to enhance your movie-watching experience. With an extensive collection of films and a powerful recommendation system, we aim to help you discover movies that perfectly match your taste.
+
+            Our website utilizes advanced algorithms and data analysis techniques to provide personalized movie suggestions. Whether you are in the mood for action, romance, comedy, or any other genre, our recommendation engine will carefully analyze your preferences and recommend movies that align with your interests. Say goodbye to endless scrolling and indecision—our intelligent system will curate a list of movies tailored specifically to you.
+            
+            Not only do we offer personalized recommendations, but we also provide detailed information about each suggested movie. From IMDb ratings and plot summaries to cast information and trailers, you'll have all the essential details at your fingertips. Additionally, our website showcases captivating movie posters, creating a visually immersive experience.
+            
+            Join us on this cinematic journey and unlock a world of remarkable movies waiting to be discovered. Sit back, relax, and let our Movie Recommendation Website be your trusted companion in exploring the vast and captivating realm of cinema. Get ready for unforgettable movie nights filled with excitement, emotion, and entertainment!.</p>
+          </section>
+
+          <br><br>
     
         <section>
           <h2>Our Mission</h2>
-          <p>Our mission is to help you discover amazing movies that you'll love. We analyze your preferences and suggest movies based on your taste.</p>
+          <p>Our mission is to revolutionize the way people discover and enjoy movies. We believe that everyone deserves a personalized movie recommendation experience, tailored to their unique preferences and interests. Our goal is to connect individuals with films that resonate with them on a deep level, sparking joy, inspiration, and thought-provoking conversations.
+
+            By harnessing the power of cutting-edge technology and data analysis, we strive to make movie recommendations more accurate, efficient, and enjoyable. We are committed to continuously improving our recommendation algorithms, ensuring that our users receive the most relevant and exciting movie suggestions.
+            
+            Beyond personalized recommendations, we are passionate about creating a vibrant community of movie enthusiasts. We foster an inclusive and interactive platform where users can engage in discussions, share their thoughts, and recommend movies to others. We believe in the power of collective wisdom and the joy of discovering hidden gems through the shared experiences of our community.
+            
+            Ultimately, our mission is to ignite a lifelong love affair with cinema, fostering a deeper appreciation for storytelling, diverse perspectives, and the magic of the big screen. Join us on this cinematic journey and let us help you unlock a world of captivating movies that will leave an indelible mark on your heart and mind.</p>
         </section>
+
+
+        <br><br>
     
         <section>
           <h2>Our Team</h2>
           <p>We have a team of movie experts who carefully curate and review movies to ensure that you get the most accurate and relevant recommendations.</p>
         </section>
+
+        <br><br>
     
         <section>
-          <h2>Contact Us</h2>
-          <p>If you have any questions, suggestions, or feedback, feel free to reach out to us. We'd love to hear from you!</p>
-          <p>Email: info@movierecommendations.com</p>
-          <p>Phone: 123-456-7890</p>
+         <div class="contact">
+          <div><h2>Contact Us</h2>
+            <p>If you have any questions, suggestions, or feedback, feel free to reach out to us. We'd love to hear from you!</p>
+            <p>Email: info@movierecommendations.com</p>
+            <p>Phone: 123-456-7890</p>
+          </div>
+
+            <div>
+              <img src="Images/newsletter-t.png" style=" height: 400px;">
+            </div>
+         </div>
         </section>
       </main>
 
@@ -61,7 +122,7 @@
           <div class="footer-part1">
             <div class="footer-logo">
               <div>
-                <img src="LogoMakr-1NivQW.png" width="70px" height="40px" />
+                <img src="Images/LogoMakr-1NivQW.png" width="70px" height="40px" />
               </div>
             </div>
             <div class="footer-copyright">
@@ -107,7 +168,7 @@
                   <div><a href="#"><i class="fab fa-youtube icon"></i></a></div>
                   <div class="back"> <a href="#container">
                 <i
-          class="fa fa-arrow-circle-up"
+                  class="fa fa-arrow-circle-up"
                   style="color:#fff width :32px height:32px"
                 ></i
               ></a></div>
