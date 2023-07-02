@@ -1,41 +1,3 @@
-const searchInput = document.getElementById('search-input');
-const searchButton = document.getElementById('search-button');
-
-searchButton.addEventListener('click', () => {
-  const query = searchInput.value.trim();
-  if (query !== '') {
-    window.location.href = `/search?q=${query}`;
-  }
-});
- 
-searchInput.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter') {
-    const query = searchInput.value.trim();
-    if (query !== '') {
-      window.location.href = `/search?q=${query}`;
-    }
-  }
-});
-
-
-// floating nav
-// $(window).scroll(function() {
-//   if ($(window).scrollTop() > 10) {
-//       $('nav').addClass('floatingNav');
-//   } else {
-//       $('nav').removeClass('floatingNav');
-//   }
-// });
-
-
-// // Add smooth scrolling behavior to the back to top link
-// document.querySelector('.back a').addEventListener('click', function (event) {
-//   event.preventDefault();
-//   document.querySelector('html, body').scrollIntoView({
-//     behavior: 'smooth'
-//   });
-// });
-
 // active navigation links
 
 const clone2= window.location.pathname;
@@ -45,7 +7,6 @@ const navlinks =document.querySelectorAll('.nav-items a').forEach(link => {
 
       }
 });
-
 
 // owl carousel Card sliders JS
 
@@ -161,8 +122,52 @@ $('#f').owlCarousel({
 
 
 
+// const searchInput = document.getElementById('movie_name');
+// const searchButton = document.getElementById('search-button');
+
+// searchButton.addEventListener('click', () => {
+//   const query = searchInput.value.trim();
+//   if (query !== '') {
+//     window.location.href = `/search?q=${query}`;
+//   }
+// });
+ 
+// searchInput.addEventListener('keydown', (event) => {
+//   if (event.key === 'Enter') {
+//     const query = searchInput.value.trim();
+//     if (query !== '') {
+//       window.location.href = `/search?q=${query}`;
+//     }
+//   }
+// });
+
+
+// floating nav
+// $(window).scroll(function() {
+//   if ($(window).scrollTop() > 10) {
+//       $('nav').addClass('floatingNav');
+//   } else {
+//       $('nav').removeClass('floatingNav');
+//   }
+// });
+
+
+// // Add smooth scrolling behavior to the back to top link
+// document.querySelector('.back a').addEventListener('click', function (event) {
+//   event.preventDefault();
+//   document.querySelector('html, body').scrollIntoView({
+//     behavior: 'smooth'
+//   });
+// });
+
+
+
+
+
+
+
 
 
 // fetching movies
 
-const api_key = ca2767587004ccf5ee2caa2ea5570b7e ;
+// const api_key = ca2767587004ccf5ee2caa2ea5570b7e ;

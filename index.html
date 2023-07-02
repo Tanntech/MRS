@@ -14,8 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
 
+
+    
+
   </head>  
   <body> 
+
+
+    
 
   <!--Here is  a section of container or id as container containing the body /main content of MRS-->
   <section id="container">
@@ -54,13 +60,30 @@
 				<source src="Images/video.mp4" type="video/mp4">
 			</video>
 
-      
 
-      <div class="search-container"><!--SEARCH BAR-->
+      <form action="https://subhendu0802-server-app-xgb4f3.streamlit.app/" method="get">
+
+      <div class="search-container">
+
+        <div id="search">
+             <!-- <input type="text" id="search-input" placeholder="Search..."> -->
+             <input type="text"  id="movie_name"  name="movie_name" placeholder="What's next...">
+
+        </div>
+
+        <div class="glass">
+           <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        
+   </div>
+      </form>
+
+      
+<!-- 
+      <div class="search-container">
            
 
            <div class="glass">
-            <!--FORM BUTTON-->
             <form action="https://subhendu0802-server-app-xgb4f3.streamlit.app/" method="get">
               <div id="search">
                 <input type="text" id="movie_name"  name="movie_name" placeholder="What's next...">
@@ -70,6 +93,7 @@
             </form>
            </div>
       </div>
+     -->
        
       
 

@@ -172,7 +172,7 @@
 
 .glass{
   background-color: #ddd;
-    opacity: 70%;
+  opacity: 70%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -413,6 +413,7 @@ background: linear-gradient(0deg,black,50%,transparent);
 
 
 /*                             footer section is below there             */
+
 .footer {
   display: flex;
   width: 100%;
